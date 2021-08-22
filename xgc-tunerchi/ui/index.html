@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="./app.js" type="text/javascript"></script>
+    <!-- load MUI -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+
+    <div id="container">
+      
+      <!-- <img src="./tablet.png" alt="tablet" id="tablet"> -->
+      <div id="tablet">
+        <div class="tuner">
+          <div class="slidecontainer">
+            <h1>Засилване (Нормално | Високо)</h1>
+            <p>Текуща стойност: <span id="currentBoost">0</span></p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="boostSlider">
+          </div>
+          <div class="slidecontainer">
+            <h1>Ускорение (Нормално | Бързо)</h1>
+            <p>Текуща стойност: <span id="currentAcceleration">0</span></p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="accelerationSlider">
+          </div>
+          <div class="slidecontainer">
+            <h1>Gear Change (Нормално | Бързо)</h1>
+            <p>Текуща стойност <span id="currentGearChange">0</span></p>
+            <input type="range" min="0" max="9" step="1" class="slider" id="gearSlider">
+          </div>
+          <div class="slidecontainer">
+            <h1>Спирачки (Задни | Предни)</h1>
+            <p>Текуща стойност: <span id="currentBraking">0</span></p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="brakingSlider">
+          </div>
+          <div class="slidecontainer">
+            <h1>Drive Train (Задни | Предни)</h1>
+            <p>Текуща стойност: <span id="currentDriveTrain">0</span></p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="drivetrainSlider">
+          </div>
+          
+          <div class="buttonscontainer">
+            <button class="btn greenButton" id="saveButton">Запази</button>
+            <button class="btn greenButton" id="defaultTuneButton">По подразбиране</button>
+            <button class="btn greenButton" id="sportTuneButton">Спортно</button>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
